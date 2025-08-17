@@ -1,5 +1,6 @@
 # Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+sudo apt install rustup
+rustup install stable
 
 # Flutter Dependencies
 sudo apt-get update -y && sudo apt-get upgrade -y
