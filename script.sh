@@ -1,1 +1,22 @@
+# Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# Flutter Dependencies
+sudo apt-get update -y && sudo apt-get upgrade -y
+sudo apt-get install -y curl git unzip xz-utils zip libglu1-mesa
+
+# Flutter
+apt install wget tar
+wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.35.1-stable.tar.xz
+tar -xf flutter_linux_3.29.3-stable.tar.xz -C ~/Flutter/
+echo 'export PATH="$HOME/Flutter/flutter/bin:$PATH"' >> ~/.bash_profile
+
+# Verify
+flutter --version
+dart --version
+
+# FRB
+cargo install flutter_rust_bridge_codegen
+
+# clone
+git clone https://gitlab.com/ForTheCommunity/torrentsdigger
